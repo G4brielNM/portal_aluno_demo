@@ -25,10 +25,13 @@ body {
     align-items: center;
 }
 
-.tela.escondida, 
-#tela-estudante.escondida,
+.tela.escondida,
+#tela-login.escondida,
 #tela-home.escondida,
-#tela-login.escondida {
+#tela-estudante.escondida,
+#tela-relatorios.escondida,
+#tela-calendario.escondida,
+#tela-mapa.escondida {
     display: none !important;
 }
 
@@ -667,12 +670,12 @@ body {
 }
 
 .dia-ativo {
-    border: 1px solid #002B5B; /* Círculo azul vazado */
+    border: 1px solid #002B5B;
     border-radius: 50%;
 }
 
 .dia-hoje {
-    background-color: #EEEEEE; /* Círculo cinza preenchido */
+    background-color: #EEEEEE;
     border-radius: 50%;
 }
 
