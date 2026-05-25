@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+
+        <section id="tela-login" class="tela">
+            
+            <img src="icons/logo-portal.svg" alt="Portal do Aluno" class="logo-app">
+            <h3 class="subtitulo-login">ÁREA DE LOGIN</h3>
+
+            <div class="form-login">
+                <label>CPF</label>
+                <input type="text" class="input-field">
+
+                <label>Senha</label>
+                <div class="senha-container">
+                    <input type="password" class="input-field">
+                    <span class="icone-olho">👁</span>
+                </div>
+                
+                <a href="#" class="link-esqueci">Esqueci minha senha</a>
+                
+                <button class="btn-entrar" onclick="mudarTela('tela-home')">Entrar</button>
+                
+                <label class="checkbox-label">
+                    <input type="checkbox"> Manter-me conectado
+                </label>
+            </div>
+
+            <div class="novo-aluno-container">
+                <p>Novo aluno?</p>
+                <button class="btn-entre-aqui">Entre aqui</button>
+            </div>
+        </section>
+
+        <section id="tela-home" class="tela escondida">
+            <div class="header-home">
+                <img src="icons/logo-portal.svg" alt="Portal do Aluno" class="logo-home">
+                <div class="usuario-perfil">
+                    <span>Gabriel Nascimento</span>
+                    <div class="avatar-placeholder">👤</div>
+                </div>
+            </div>
+
+            <h3 class="titulo-servicos">Nossos serviços</h3>
+
+            <div class="grid-botoes">
+                <button class="card-btn btn-verde" onclick="mudarTela('tela-estudante')">
+                    <img src="icons/telainicial-areadoestudante.svg" alt="Estudante">
+                    <span>Área do estudante</span>
+                </button>
+
+                <button class="card-btn btn-laranja" onclick="mudarTela('tela-biblioteca')">
+                    <img src="icons/telainicial-biblioteca.svg" alt="Biblioteca">
+                    <span>Serviços da biblioteca</span>
+                </button>
+
+                <button class="card-btn btn-azul" onclick="mudarTela('tela-restaurante')">
+                    <img src="icons/telainicial-ru.svg" alt="Restaurante">
+                    <span>Restaurante universitário</span>
+                </button>
+
+                <button class="card-btn btn-roxo" onclick="mudarTela('tela-relatorios')">
+                    <img src="icons/telainicial-relatorios.svg" alt="Relatórios">
+                    <span>Relatórios</span>
+                </button>
+
+                <button class="card-btn btn-oliva" onclick="mudarTela('tela-calendario')">
+                    <img src="icons/telainicial-calendario.svg" alt="Calendário">
+                    <span>Calendário</span>
+                </button>
+
+                <button class="card-btn btn-cinza" onclick="mudarTela('tela-mapa')">
+                    <img src="icons/telainicial-mapa.svg" alt="Mapa">
+                    <span>Mapa</span>
+                </button>
+            </div>
+
+            <button class="btn-sair" onclick="mudarTela('tela-login')">SAIR</button>
+
+            <div class="card-noticias">
+                <div class="noticias-header">
+                    <span>Últimas notícias</span>
+                    <span>▲</span>
+                </div>
+                <div class="noticias-corpo">
+                    <h4>INÍCIO DO PERÍODO LETIVO</h4>
+                    <p>O ano letivo de 2026/1 irá começar nesta quinta-feira, dia 14 de Maio...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tela-estudante" class="tela escondida">
+    
+    <header class="header-estudante">
+        <button class="btn-icon" onclick="mudarTela('tela-home')">
+            <img src="icons/login-voltar.svg" alt="Menu" class="icone-svg">
+        </button>
+        <img src="icons/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
+        <div class="avatar-placeholder">👤</div>
+    </header>
+
+    <div class="conteudo-centralizado">
+        <h2 class="titulo-secao">Área do Estudante</h2>
+
+        <div class="perfil-estudante">
+            <div class="avatar-container">
+                <div class="avatar-circulo">👤</div>
+                <button class="btn-editar">
+                    <img src="icons/perfil-editarfoto.svg" alt="Editar">
+                </button>
+            </div>
+            <div class="info-pessoais">
+                <h3>Gabriel Nascimento Marques</h3>
+                <p>Sistemas de Informação</p>
+                <p>5º período - 2026/1</p>
+                <p>Campus - Rio Branco</p>
+            </div>
+        </div>
+
+        <div class="progresso-container">
+            <span>Progresso do curso</span>
+            <div class="barra-fundo">
+                <div class="barra-preenchida" style="width: 50%;"></div>
+            </div>
+            <span class="progresso-texto">50%</span>
+        </div>
+
+        <div class="disciplinas-lista">
+            <p class="disciplinas-titulo">Disciplinas matriculadas:</p>
+
+            <details class="disciplina-item">
+                <summary>
+                    Algoritmos - Jean Gonzaga 
+                    <img src="icons/telainicial-arrownoticias.svg" class="icone-seta">
+                </summary>
+                <div class="disciplina-detalhes">
+                    <div class="notas-grid-tabela">
+                        <div class="coluna-nota">
+                            <span class="titulo-nota">Nota 1:</span>
+                            <div class="sub-notas">
+                                <div><em>Avaliação 1:</em><br>8.0</div>
+                                <div><em>Avaliação 2:</em><br>8.6</div>
+                            </div>
+                        </div>
+                        <div class="coluna-nota">
+                            <span class="titulo-nota">Nota 2:</span>
+                            <div class="sub-notas">
+                                <div><em>Avaliação 3:</em><br>10.0</div>
+                                <div><em>Avaliação 4:</em><br>10</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-final">
+                        <p><strong>Situação:</strong> <span class="aprovado">Aprovado</span></p>
+                        <p><strong>Média Final:</strong> 9.7</p>
+                        <p><strong>Total de Faltas:</strong> 11</p>
+                    </div>
+                </div>  
+            </details>
+
+            <details class="disciplina-item">
+                <summary>
+                    Matemática Discreta - Claudionor A. 
+                    <img src="icons/telainicial-arrownoticias.svg" class="icone-seta">
+                </summary>
+                <div class="disciplina-detalhes">
+                    <div class="notas-grid-tabela">
+                        <div class="coluna-nota">
+                            <span class="titulo-nota">Nota 1:</span>
+                            <div class="sub-notas">
+                                <div><em>Avaliação 1:</em><br>7.0</div>
+                                <div><em>Avaliação 2:</em><br>8.6</div>
+                            </div>
+                        </div>
+                        <div class="coluna-nota">
+                            <span class="titulo-nota">Nota 2:</span>
+                            <div class="sub-notas">
+                                <div><em>Avaliação 3:</em><br>9.0</div>
+                                <div><em>Avaliação 4:</em><br>10</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-final">
+                        <p><strong>Situação:</strong> <span class="aprovado">Aprovado</span></p>
+                        <p><strong>Média Final:</strong> 9.1</p>
+                        <p><strong>Total de Faltas:</strong> 15</p>
+                    </div>
+                </div>
+            </details>
+
+            <details class="disciplina-item">
+                <summary>
+                    Álgebra Linear - Ivan Medeiros 
+                    <img src="icons/telainicial-arrownoticias.svg" class="icone-seta">
+                </summary>
+                <div class="disciplina-detalhes">
+                    <div class="notas-grid-tabela">
+                        <div class="coluna-nota">
+                            <span class="titulo-nota">Nota 1:</span>
+                            <div class="sub-notas">
+                                <div><em>Avaliação 1:</em><br>7.0</div>
+                                <div><em>Avaliação 2:</em><br>8.6</div>
+                            </div>
+                        </div>
+                        <div class="coluna-nota">
+                            <span class="titulo-nota">Nota 2:</span>
+                            <div class="sub-notas">
+                                <div><em>Avaliação 3:</em><br>9.0</div>
+                                <div><em>Avaliação 4:</em><br>10</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-final">
+                        <p><strong>Situação:</strong> <span class="aprovado">Aprovado</span></p>
+                        <p><strong>Média Final:</strong> 9.1</p>
+                        <p><strong>Total de Faltas:</strong> 15</p>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <div class="botoes-inferiores">
+            <button class="btn-acao bg-roxo" onclick="mudarTela('tela-relatorios')">
+                <div class="icone-box"><img src="icons/telainicial-relatorios.svg" alt=""></div>
+                <span>Ir para a página de relatórios</span>
+            </button>
+
+            <button class="btn-acao bg-cinza">
+                <div class="icone-box"><img src="icons/perfil-matriculadisciplinar.svg" alt=""></div>
+                <span>Realizar matrícula disciplinar</span>
+            </button>
+
+            <button class="btn-acao bg-verde">
+                <div class="icone-box"><img src="icons/perfil-atestadomedico.svg" alt=""></div>
+                <span>Envio de atestado médico</span>
+            </button>
+        </div>
+    </div>
+</section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

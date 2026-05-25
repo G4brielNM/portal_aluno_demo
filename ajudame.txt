@@ -1,0 +1,13 @@
+Cores HEX
+
+Fundo degradê - #073871 --> #031222
+
+Botões: Area do estudante - #00B944
+	Biblioteca - #CD8C00
+	Restaurante - #006CCB
+	Relatórios - #9900C8
+	Calendário - #A6B500
+	Mapa - #696969
+	Tela inicial #073871
+
+Fundo menu sanduíche - #001937
