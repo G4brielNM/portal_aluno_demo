@@ -246,7 +246,142 @@
         </div>
     </div>
 </section>
+<section id="tela-relatorios" class="tela escondida">
+    <header class="header-estudante">
+        <button class="btn-icon" onclick="mudarTela('tela-home')">
+            <img src="caminho_para_icone_menu.svg" alt="Menu" class="icone-svg">
+        </button>
+        <img src="images/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
+        <button class="btn-icon" onclick="mudarTela('tela-estudante')">
+            <img src="caminho_para_icone_perfil.svg" alt="Perfil" class="icone-svg">
+        </button>
+    </header>
+
+    <div class="conteudo-centralizado">
+        <h2 class="titulo-secao">Relatórios</h2>
+        
+        <div class="lista-relatorios">
+            <button class="item-relatorio">
+                <span>Atestado de matrícula</span>
+                <img src="caminho_para_icone_download.svg" alt="Baixar">
+            </button>
+            <button class="item-relatorio">
+                <span>Comprovante de matrícula</span>
+                <img src="caminho_para_icone_download.svg" alt="Baixar">
+            </button>
+            <button class="item-relatorio">
+                <span>Ficha cadastral do aluno</span>
+                <img src="caminho_para_icone_download.svg" alt="Baixar">
+            </button>
+            <button class="item-relatorio">
+                <span>Histórico escolar simplificado</span>
+                <img src="caminho_para_icone_download.svg" alt="Baixar">
+            </button>
+            <button class="item-relatorio">
+                <span>Histórico Integralização</span>
+                <img src="caminho_para_icone_download.svg" alt="Baixar">
+            </button>
+            <button class="item-relatorio">
+                <span>Solicitação de matrícula</span>
+                <img src="caminho_para_icone_download.svg" alt="Baixar">
+            </button>
+            <button class="item-relatorio">
+                <span>Histórico escolar CR - Aprovados (SIE)</span>
+                <img src="caminho_para_icone_download.svg" alt="Baixar">
+            </button>
+        </div>
     </div>
+</section>
+
+<section id="tela-calendario" class="tela escondida">
+    <header class="header-estudante">
+        <button class="btn-icon" onclick="mudarTela('tela-home')">
+            <img src="caminho_para_icone_menu.svg" alt="Menu" class="icone-svg">
+        </button>
+        <img src="images/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
+        <button class="btn-icon" onclick="mudarTela('tela-estudante')">
+            <img src="caminho_para_icone_perfil.svg" alt="Perfil" class="icone-svg">
+        </button>
+    </header>
+
+    <div class="conteudo-centralizado">
+        <h2 class="titulo-secao">Calendário</h2>
+
+        <div class="card-branco card-calendario">
+            <p class="legenda-data">Selecione a data</p>
+            <div class="data-selecionada">
+                <h3>Seg, 13 Maio</h3>
+                <img src="caminho_para_icone_lapis.svg" alt="Editar" class="icone-pequeno">
+            </div>
+            
+            <div class="seletor-mes">
+                <span>Maio 2026 ▾</span>
+                <div>
+                    <span class="seta-mes">❮</span>
+                    <span class="seta-mes">❯</span>
+                </div>
+            </div>
+
+            <div class="grid-dias-semana">
+                <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
+            </div>
+            <div class="grid-numeros-dias">
+                <span></span><span></span><span></span><span></span><span></span><span>1</span><span>2</span>
+                <span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+                <span>10</span><span>11</span><span>12</span><span class="dia-ativo">13</span><span class="dia-hoje">14</span><span>15</span><span>16</span>
+                <span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span>
+                <span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
+            </div>
+        </div>
+
+        <div class="card-branco card-eventos">
+            <h3>Próximos eventos</h3>
+            <ul>
+                <li>14/05 - Início do semestre letivo 2026/1</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="tela-mapa" class="tela escondida">
+    <header class="header-estudante">
+        <button class="btn-icon" onclick="mudarTela('tela-home')">
+            <img src="caminho_para_icone_menu.svg" alt="Menu" class="icone-svg">
+        </button>
+        <img src="images/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
+        <button class="btn-icon" onclick="mudarTela('tela-estudante')">
+            <img src="caminho_para_icone_perfil.svg" alt="Perfil" class="icone-svg">
+        </button>
+    </header>
+
+    <div class="conteudo-centralizado">
+        <div class="busca-mapa">
+            <input type="text" placeholder="NURCA" value="NURCA">
+            <img src="caminho_para_icone_lupa.svg" alt="Buscar">
+        </div>
+
+        <div class="area-mapa">
+            <img src="images/imagem_do_mapa_ufac_exportado.png" alt="Mapa da Universidade" class="imagem-mapa">
+        </div>
+
+        <div class="botoes-rota">
+            <button class="btn-rota">
+                <img src="caminho_para_icone_carro.svg" alt="Carro">
+                <span>1 min</span>
+            </button>
+            <button class="btn-rota btn-rota-ativo">
+                <img src="caminho_para_icone_pin.svg" alt="Distância">
+                <span>550m</span>
+            </button>
+            <button class="btn-rota">
+                <img src="caminho_para_icone_pessoa.svg" alt="A pé">
+                <span>6 min</span>
+            </button>
+        </div>
+    </div>
+</section>
+    </div>
+
 
     <script src="script.js"></script>
 </body>

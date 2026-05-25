@@ -536,3 +536,228 @@ body {
 .bg-roxo { background-color: #AA00FF; }
 .bg-cinza { background-color: #757575; }
 .bg-verde { background-color: #00C853; }
+
+/* ========================================== */
+/* GARANTIA DE LARGURA PARA AS NOVAS TELAS NO NOTEBOOK */
+/* ========================================== */
+#tela-relatorios, #tela-calendario, #tela-mapa {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    padding: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+#tela-relatorios .conteudo-centralizado,
+#tela-calendario .conteudo-centralizado,
+#tela-mapa .conteudo-centralizado {
+    width: 85% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+/* ========================================== */
+/* ESTILOS ESPECÍFICOS - TELA DE RELATÓRIOS */
+/* ========================================== */
+.lista-relatorios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item-relatorio {
+    width: 100%;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    text-align: left;
+}
+
+.item-relatorio img {
+    width: 20px;
+    height: 20px;
+}
+
+/* ========================================== */
+/* ESTILOS ESPECÍFICOS - TELA DE CALENDÁRIO */
+/* ========================================== */
+.card-branco {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.legenda-data {
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.data-selecionada {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.data-selecionada h3 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.icone-pequeno {
+    width: 16px;
+}
+
+.seletor-mes {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.seta-mes {
+    cursor: pointer;
+    margin-left: 15px;
+    color: #666;
+}
+
+/* Grid do Calendário */
+.grid-dias-semana, .grid-numeros-dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    gap: 10px 0;
+}
+
+.grid-dias-semana span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.grid-numeros-dias span {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+}
+
+.dia-ativo {
+    border: 1px solid #002B5B; /* Círculo azul vazado */
+    border-radius: 50%;
+}
+
+.dia-hoje {
+    background-color: #EEEEEE; /* Círculo cinza preenchido */
+    border-radius: 50%;
+}
+
+/* Card de Eventos */
+.card-eventos h3 {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-eventos ul {
+    list-style-type: none;
+    font-size: 11px;
+}
+
+.card-eventos li {
+    margin-bottom: 5px;
+}
+
+/* ========================================== */
+/* ESTILOS ESPECÍFICOS - TELA DE MAPA */
+/* ========================================== */
+.busca-mapa {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.busca-mapa input {
+    border: none;
+    outline: none;
+    width: 90%;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.busca-mapa img {
+    width: 18px;
+    cursor: pointer;
+}
+
+.area-mapa {
+    width: 100%;
+    height: 400px; /* Altura fixa para o mapa no notebook */
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.imagem-mapa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem do mapa preencher todo o espaço sem distorcer */
+}
+
+.botoes-rota {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn-rota {
+    flex: 1; /* Faz os três botões terem larguras iguais */
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-rota img {
+    height: 24px;
+}
