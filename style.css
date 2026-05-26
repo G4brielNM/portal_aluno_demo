@@ -25,16 +25,6 @@ body {
     align-items: center;
 }
 
-.tela.escondida,
-#tela-login.escondida,
-#tela-home.escondida,
-#tela-estudante.escondida,
-#tela-relatorios.escondida,
-#tela-calendario.escondida,
-#tela-mapa.escondida {
-    display: none !important;
-}
-
 /* LOGIN */
 .logo-app {
     width: 250px;
@@ -93,7 +83,7 @@ body {
     color: #FFFFFF;
     font-size: 11px;
     text-decoration: none;
-    margin-bottom: 30px;
+    margin-bottom: auto;
 }
 
 .btn-entrar {
@@ -105,9 +95,15 @@ body {
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.btn-entrar:hover {
+    transform: scale(1.1);
 }
 
 .checkbox-label {
+    margin-top: auto;
     font-size: 11px;
     display: flex;
     align-items: center;
@@ -115,7 +111,7 @@ body {
 }
 
 .novo-aluno-container {
-    margin-top: auto;
+    margin-top: 25px;
     margin-bottom: 20px;
     text-align: center;
 }

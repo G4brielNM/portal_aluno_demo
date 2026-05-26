@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Portal do Aluno</title>
+    <link rel="stylesheet" href="mapa.css"> 
+</head>
+<body>
+
+    <div class="app-container">
+        <section id="tela-mapa" class="tela escondida">
+            <header class="header-estudante">
+                <button class="btn-icon" onclick="window.location.href='../../telas/telaInicial/telainicial.html'">
+                    <img src="../../icons/login-voltar.svg" alt="Menu" class="icone-svg">
+                </button>
+                <img src="../../icons/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
+                <button class="btn-icon" onclick="mudarTela('tela-estudante')">
+                    <div class="avatar-placeholder">👤</div>
+                </button>
+            </header>
+
+    <div class="conteudo-centralizado">
+        <h2 class="titulo-secao">Mapa do Campus</h2>
+
+        <div class="busca-mapa">
+            <input type="text" placeholder="NURCA" value="NURCA">
+            <img src="../../icons/icon-pesquisar.svg" alt="Buscar">
+        </div>
+
+        <div class="area-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2074.869574872537!2d-67.86408619212223!3d-9.95757126568577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x917f8f24e6c511c7%3A0x57cb3a7b64dcf9be!2sN%C3%BAcleo%20de%20Registro%20e%20Controle%20Acad%C3%AAmico%20-%20Nurca!5e1!3m2!1spt-BR!2sbr!4v1779824208474!5m2!1spt-BR!2sbr" width="900" height="400" margin="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="botoes-rota">
+            <button class="btn-rota">
+                <img src="../../icons/mapa-carro.svg" alt="Carro">
+                <span>1 min</span>
+            </button>
+            <button class="btn-rota btn-rota-ativo">
+                <img src="../../icons/mapa-distancia.svg" alt="Distância">
+                <span>550m</span>
+            </button>
+            <button class="btn-rota">
+                <img src="../../icons/mapa-andando.svg" alt="A pé">
+                <span>6 min</span>
+            </button>
+        </div>
+    </div>
+</section>
+    </div>
+
+</body>
+</html>

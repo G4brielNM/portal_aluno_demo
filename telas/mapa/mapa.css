@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #002B5B 0%, #001021 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #FFFFFF;
+}
+
+.header-estudante {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.avatar-placeholder {
+    width: 35px;
+    height: 35px;
+    background-color: #A29BFE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tela-mapa {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    padding: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icone-svg {
+    width: 35px;
+    height: 35px;
+}
+
+.profile-photo {
+    width: 35px;
+    height: 35px;
+}
+
+.logo-header {
+    width: 150px;
+}
+
+#tela-mapa .conteudo-centralizado {
+    width: 85% !important;        /* Ocupa 85% da largura total do notebook */
+    max-width: 900px !important;  /* Limite máximo bem amplo para telas grandes */
+    margin: 0 auto !important;     /* Garante o alinhamento no meio */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.titulo-secao {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+/* ========================================== */
+/* ESTILOS ESPECÍFICOS - TELA DE MAPA */
+/* ========================================== */
+.busca-mapa {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.busca-mapa input {
+    border: none;
+    outline: none;
+    width: 90%;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.busca-mapa img {
+    width: 18px;
+    cursor: pointer;
+}
+
+.area-mapa {
+    margin: 20px;
+}
+
+.imagem-mapa {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem do mapa preencher todo o espaço sem distorcer */
+}
+
+.botoes-rota {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn-rota {
+    flex: 1; /* Faz os três botões terem larguras iguais */
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-rota img {
+    height: 24px;
+}
