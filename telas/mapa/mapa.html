@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Portal do Aluno</title>
+    <link rel="stylesheet" href="../mapa/mapa.css"> 
+</head>
+<body>
+
+    <div class="app-container">
+        <section id="tela-mapa" class="tela escondida">
+    <header class="header-estudante">
+        <button class="btn-icon" onclick="window.location.href='/Users/Aluno/Documents/Gab_marques/webacademy/portal_aluno_demo/telas/telaInicial/telainicial.html'">
+            <img src="/Users/Aluno/Documents/Gab_marques/webacademy/portal_aluno_demo/icons/login-voltar.svg" alt="Menu" class="icone-svg">
+        </button>
+        <img src="/Users/Aluno/Documents/Gab_marques/webacademy/portal_aluno_demo/icons/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
+        <button class="btn-icon" onclick="mudarTela('tela-estudante')">
+            <div class="avatar-placeholder">👤</div>
+        </button>
+    </header>
+
+    <div class="conteudo-centralizado">
+        <div class="busca-mapa">
+            <input type="text" placeholder="NURCA" value="NURCA">
+            <img src="caminho_para_icone_lupa.svg" alt="Buscar">
+        </div>
+
+        <div class="area-mapa">
+            <img src="images/imagem_do_mapa_ufac_exportado.png" alt="Mapa da Universidade" class="imagem-mapa">
+        </div>
+
+        <div class="botoes-rota">
+            <button class="btn-rota">
+                <img src="caminho_para_icone_carro.svg" alt="Carro">
+                <span>1 min</span>
+            </button>
+            <button class="btn-rota btn-rota-ativo">
+                <img src="caminho_para_icone_pin.svg" alt="Distância">
+                <span>550m</span>
+            </button>
+            <button class="btn-rota">
+                <img src="caminho_para_icone_pessoa.svg" alt="A pé">
+                <span>6 min</span>
+            </button>
+        </div>
+    </div>
+</section>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #002B5B 0%, #001021 100%); /* Fundo escuro atrás do "celular" no monitor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #FFFFFF;
+}
+
+
+/* Telas */
+.tela {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TELA HOME */
+.header-home {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-home {
+    width: 200px;
+}
+
+.usuario-perfil {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar-placeholder {
+    width: 35px;
+    height: 35px;
+    background-color: #A29BFE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-servicos {
+    margin: 40px 0 20px 0;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+/* Grid de Serviços */
+.grid-botoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px;
+    width: 70%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo individual do botão de serviço */
+.card-btn {
+    border: none;
+    border-radius: 20px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+    cursor: pointer;
+    background: none;
+}
+
+.card-btn img {
+    width: 50px;
+    height: 50px;
+}
+
+.card-btn span {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* CORES DOS FUNDOS DOS ÍCONES */
+.btn-verde { background-color: #00B944; }
+.btn-laranja { background-color: #CD8C00; }
+.btn-azul { background-color: #006CCB; }
+.btn-roxo { background-color: #9900C8; }
+.btn-oliva { background-color: #A6B500; }
+.btn-cinza { background-color: #696969; }
+
+.btn-sair {
+    width: 200px;
+    background-color: #900000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+/* Card de Últimas Notícias */
+.card-noticias {
+    width: 100%;
+    max-width: 800px;
+    background-color: #A6A6A6;
+    border-radius: 25px 25px 0 0;
+    color: #000000;
+    padding: 20px 30px;
+    margin-top: auto; 
+}
+
+.noticias-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.noticias-corpo h4 {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.noticias-corpo p {
+    font-size: 13px;
+    line-height: 1.3;
+}
