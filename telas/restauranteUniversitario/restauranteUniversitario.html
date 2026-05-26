@@ -39,7 +39,7 @@
           </svg>
         </div>
 
-        <div class="logo-text">
+        <div class="logo-text" href="../../index.html">
           <span>Portal do</span>
           <strong>ALUNO</strong>
         </div>
@@ -96,6 +96,11 @@
       <!-- Topbar -->
       <div class="topbar">
 
+        <!-- Mude o href abaixo para o link de destino desejado -->
+        <a href="../../index.html" class="btn-voltar">
+          &larr; Voltar
+        </a>
+
         <span class="topbar-title">
           Restaurante Universitário
         </span>
@@ -150,14 +155,14 @@
 
           <button
             class="btn-sec"
-            onclick="showToast('Histórico em breve')"
+            onclick="window.location.href='../../telas/restauranteUniversitario/historico/index.html'; setActive(this)"; showToast('Histórico em breve')"
           >
             Histórico
           </button>
 
           <button
             class="btn-sec"
-            onclick="showToast('Cardápio em breve')"
+            onclick="window.location.href='../../telas/restauranteUniversitario/cardapio/index.html'; setActive(this); showToast('Cardápio em breve')"
           >
             Cardápio
           </button>
