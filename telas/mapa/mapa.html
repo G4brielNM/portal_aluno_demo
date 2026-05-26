@@ -4,43 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Portal do Aluno</title>
-    <link rel="stylesheet" href="../mapa/mapa.css"> 
+    <link rel="stylesheet" href="mapa.css"> 
 </head>
 <body>
 
     <div class="app-container">
         <section id="tela-mapa" class="tela escondida">
-    <header class="header-estudante">
-        <button class="btn-icon" onclick="window.location.href='/Users/Aluno/Documents/Gab_marques/webacademy/portal_aluno_demo/telas/telaInicial/telainicial.html'">
-            <img src="/Users/Aluno/Documents/Gab_marques/webacademy/portal_aluno_demo/icons/login-voltar.svg" alt="Menu" class="icone-svg">
-        </button>
-        <img src="/Users/Aluno/Documents/Gab_marques/webacademy/portal_aluno_demo/icons/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
-        <button class="btn-icon" onclick="mudarTela('tela-estudante')">
-            <div class="avatar-placeholder">👤</div>
-        </button>
-    </header>
+            <header class="header-estudante">
+                <button class="btn-icon" onclick="window.location.href='../../telas/telaInicial/telainicial.html'">
+                    <img src="../../icons/login-voltar.svg" alt="Menu" class="icone-svg">
+                </button>
+                <img src="../../icons/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
+                <button class="btn-icon" onclick="mudarTela('tela-estudante')">
+                    <div class="avatar-placeholder">👤</div>
+                </button>
+            </header>
 
     <div class="conteudo-centralizado">
+        <h2 class="titulo-secao">Mapa do Campus</h2>
+
         <div class="busca-mapa">
             <input type="text" placeholder="NURCA" value="NURCA">
-            <img src="caminho_para_icone_lupa.svg" alt="Buscar">
+            <img src="../../icons/icon-pesquisar.svg" alt="Buscar">
         </div>
 
         <div class="area-mapa">
-            <img src="images/imagem_do_mapa_ufac_exportado.png" alt="Mapa da Universidade" class="imagem-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2074.869574872537!2d-67.86408619212223!3d-9.95757126568577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x917f8f24e6c511c7%3A0x57cb3a7b64dcf9be!2sN%C3%BAcleo%20de%20Registro%20e%20Controle%20Acad%C3%AAmico%20-%20Nurca!5e1!3m2!1spt-BR!2sbr!4v1779824208474!5m2!1spt-BR!2sbr" width="900" height="400" margin="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div class="botoes-rota">
             <button class="btn-rota">
-                <img src="caminho_para_icone_carro.svg" alt="Carro">
+                <img src="../../icons/mapa-carro.svg" alt="Carro">
                 <span>1 min</span>
             </button>
             <button class="btn-rota btn-rota-ativo">
-                <img src="caminho_para_icone_pin.svg" alt="Distância">
+                <img src="../../icons/mapa-distancia.svg" alt="Distância">
                 <span>550m</span>
             </button>
             <button class="btn-rota">
-                <img src="caminho_para_icone_pessoa.svg" alt="A pé">
+                <img src="../../icons/mapa-andando.svg" alt="A pé">
                 <span>6 min</span>
             </button>
         </div>

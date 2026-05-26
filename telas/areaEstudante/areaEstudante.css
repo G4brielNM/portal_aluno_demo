@@ -14,16 +14,6 @@ body {
     color: #FFFFFF;
 }
 
-
-#tela-estudante {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    padding: 20px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-}
-
 .header-estudante {
     width: 100%;
     max-width: 900px;
@@ -32,6 +22,25 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
+}
+
+.avatar-placeholder {
+    width: 35px;
+    height: 35px;
+    background-color: #A29BFE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tela-estudante {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    padding: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
 }
 
 .btn-icon {
@@ -257,6 +266,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.btn-acao:hover {
+    transform: scale(1.05);
 }
 
 .btn-acao {
