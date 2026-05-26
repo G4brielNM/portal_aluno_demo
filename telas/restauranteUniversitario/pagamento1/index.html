@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno - Recarregar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="web-container">
+        <header class="header">
+            <button class="btn-back" onclick="window.history.back()">←</button>
+            <div class="logo">PORTAL DO <span class="highlight">ALUNO</span></div>
+            <div class="profile-icon">👤</div>
+        </header>
+
+        <main class="content">
+            <h2>Recarregar</h2>
+            <p class="instruction">Digite o valor (R$):</p>
+            
+            <div class="input-container">
+                <input type="text" id="value-input" value="15.00" readonly>
+            </div>
+
+            <div class="keyboard-grid">
+                <button onclick="pressKey('1')">1</button>
+                <button onclick="pressKey('2')">2</button>
+                <button onclick="pressKey('3')">3</button>
+                <button onclick="pressKey('4')">4</button>
+                <button onclick="pressKey('5')">5</button>
+                <button onclick="pressKey('6')">6</button>
+                <button onclick="pressKey('7')">7</button>
+                <button onclick="pressKey('8')">8</button>
+                <button onclick="pressKey('9')">9</button>
+                <button class="empty"></button>
+                <button onclick="pressKey('0')">0</button>
+                <button onclick="pressKey('back')">⌫</button>
+            </div>
+
+            <div class="actions">
+                
+                <!--- <button class="btn-confirm" id="confirm-btn">✓ Confirmar</button> -->
+                <a href="../formaPagamento/index.html" class="btn-confirm">✓ Confirmar</a>
+                <a href="../restauranteUniversitario.html" class="btn-cancel">✗ Cancelar</a>
+
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

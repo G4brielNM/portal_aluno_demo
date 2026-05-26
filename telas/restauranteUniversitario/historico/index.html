@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno - Histórico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="web-container">
+        <header class="header">
+            <button class="btn-back" onclick="window.history.back()">←</button>
+            <div class="logo">PORTAL DO <span class="highlight">ALUNO</span></div>
+            <div class="profile-icon">👤</div>
+        </header>
+
+        <main class="content">
+            <h2>Histórico</h2>
+            
+            <div class="table-container">
+                <table class="history-table">
+                    <thead>
+                        <tr>
+                            <th>Data/Hora</th>
+                            <th>Refeição</th>
+                            <th>Menu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>31/03/2026<br><span class="time">11:41</span></td>
+                            <td>Almoço</td>
+                            <td>Carne bovina ao molho madeira, arroz, feijão</td>
+                        </tr>
+                        <tr>
+                            <td>31/03/2026<br><span class="time">06:47</span></td>
+                            <td>Café da manhã</td>
+                            <td>Pão com ovo, café, leite</td>
+                        </tr>
+                        <tr>
+                            <td>27/03/2026<br><span class="time">11:57</span></td>
+                            <td>Almoço</td>
+                            <td>Filé de frango ao molho barbecue, arroz, feijão</td>
+                        </tr>
+                        <tr>
+                            <td>27/03/2026<br><span class="time">06:40</span></td>
+                            <td>Café da manhã</td>
+                            <td>Pão com ovo, café, leite</td>
+                        </tr>
+                        <tr>
+                            <td>26/03/2026<br><span class="time">11:37</span></td>
+                            <td>Almoço</td>
+                            <td>Isca de frango acebolada, arroz, feijão preto</td>
+                        </tr>
+                        <tr>
+                            <td>26/03/2026<br><span class="time">06:44</span></td>
+                            <td>Café da manhã</td>
+                            <td>Cuscuz com ovo, café, leite</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="pagination">
+                    <button class="page-arrow">‹</button>
+                    <span>Página 1-100</span>
+                    <button class="page-arrow">›</button>
+                </div>
+            </div>
+
+            <button class="btn-export" id="export-pdf-btn">
+                <span>Exportar para PDF</span>
+                <span class="icon">📄</span>
+            </button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
