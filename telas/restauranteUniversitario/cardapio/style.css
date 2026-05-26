@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #031b33;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.web-container {
+    background-color: #052646;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.btn-back {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.logo .highlight { color: #f39c12; }
+
+.profile-icon {
+    font-size: 24px;
+    background: rgba(255,255,255,0.1);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.content {
+    text-align: center;
+}
+
+h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.current-date {
+    color: #cbd5e1;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+}
+
+.menu-time-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding: 0 4px;
+}
+
+.meal-title {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.meal-hours {
+    color: #94a3b8;
+}
+
+.meal-card {
+    background-color: #ffffff;
+    color: #1e293b;
+    padding: 18px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-size: 14px;
+    line-height: 1.5;
+}

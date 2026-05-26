@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #031b33;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.web-container {
+    background-color: #052646;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.btn-back {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.logo .highlight {
+    color: #f39c12;
+}
+
+.profile-icon {
+    font-size: 24px;
+    background: rgba(255,255,255,0.1);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.content {
+    text-align: center;
+}
+
+h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.instruction {
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    width: 100%;
+    background-color: #cbd5e1;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.keyboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    background-color: #1e3a5f;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.keyboard-grid button {
+    background-color: #e2e8f0;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e293b;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.keyboard-grid button:not(.empty):hover {
+    background-color: #cbd5e1;
+}
+
+.keyboard-grid .empty {
+    background: transparent;
+    cursor: default;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-confirm {
+    background-color: #22c55e;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-cancel {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-confirm:hover { background-color: #16a34a; }
+.btn-cancel:hover { background-color: #dc2626; }

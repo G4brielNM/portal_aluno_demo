@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno - Forma de Pagamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="web-container">
+        <header class="header">
+            <button class="btn-back" onclick="window.history.back()">←</button>
+            <div class="logo">PORTAL DO <span class="highlight">ALUNO</span></div>
+            <div class="profile-icon">👤</div>
+        </header>
+
+        <main class="content">
+            <h2>Recarregar</h2>
+            <p class="instruction">Escolha a forma de pagamento:</p>
+            
+            <div class="methods-container">
+                <button class="method-card" id="card-method">
+                    <div class="icon">💳</div>
+                    <span>Cartão de Débito</span>
+                </button>
+
+                <button class="method-card" id="pix-method">
+                    <div class="icon">💎</div>
+                    <span>Pix</span>
+                </button>
+            </div>
+
+            <button class="btn-cancel" onclick="window.history.back()">✗ Cancelar</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
