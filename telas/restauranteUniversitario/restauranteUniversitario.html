@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Configurações básicas -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Portal do Aluno — RU</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="restauranteUniversitario.css" />
+</head>
+
+<body>
+
+  <div class="shell">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+    <aside class="sidebar" id="sidebar">
+
+      <!-- Logo -->
+      <div class="sidebar-logo">
+
+        <div class="logo-icon">
+          <!-- Ícone -->
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M11 3L2 8l9 5 9-5-9-5z" fill="#0d1b3e"/>
+          </svg>
+        </div>
+
+        <div class="logo-text">
+          <span>Portal do</span>
+          <strong>ALUNO</strong>
+        </div>
+
+      </div>
+
+      <!-- Navegação -->
+      <nav class="nav">
+
+        <div class="nav-item active" onclick="setActive(this)">
+          Meu QR Code
+        </div>
+
+        <div class="nav-item" onclick="window.location.href='/portal_aluno_demo/telas/restauranteUniversitario/historico/index.html'; setActive(this)"; showToast('Histórico em breve')">
+          Histórico
+        </div>
+
+        <div class="nav-item" onclick="window.location.href='/portal_aluno_demo/telas/restauranteUniversitario/cardapio/index.html'; setActive(this); showToast('Cardápio em breve')">
+          Cardápio
+        </div>
+
+        
+
+      </nav>
+
+      <!-- Usuário -->
+      <div class="sidebar-bottom">
+
+        <div class="user-chip">
+
+          <div class="avatar">
+            BC
+          </div>
+
+          <div class="user-info">
+            <span>Breno Campelo</span>
+            <span>Aluno</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+    <!-- Overlay mobile -->
+    <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
+    <main class="main">
+
+      <!-- Topbar -->
+      <div class="topbar">
+
+        <span class="topbar-title">
+          Restaurante Universitário
+        </span>
+
+        <span class="topbar-badge">
+          ● Online
+        </span>
+
+      </div>
+
+      <!-- Card principal -->
+      <div class="card">
+
+        <!-- Saldo -->
+        <p class="saldo-label">
+          Saldo disponível
+        </p>
+
+        <div class="saldo-value">
+          R$ 10,00
+        </div>
+
+        <!-- QR Code -->
+        <div class="qr-wrap" id="qrWrap">
+
+          <!-- Aqui pode entrar uma imagem -->
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=PortalAluno"
+            alt="QR Code"
+          />
+
+        </div>
+
+        <!-- Matrícula -->
+        <p class="matricula">
+          20250300029
+        </p>
+
+
+
+        <!-- Botão secundário -->
+        <button
+          class="btn-compra"
+          onclick="window.location.href='pagamento1/index.html'"
+        >
+        +
+    
+        </button>
+
+        <!-- Ações -->
+        <div class="actions">
+
+          <button
+            class="btn-sec"
+            onclick="showToast('Histórico em breve')"
+          >
+            Histórico
+          </button>
+
+          <button
+            class="btn-sec"
+            onclick="showToast('Cardápio em breve')"
+          >
+            Cardápio
+          </button>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Botão menu mobile -->
+  <button
+    class="sidebar-toggle"
+    onclick="openSidebar()"
+  >
+    ☰
+  </button>
+
+  <!-- JS externo -->
+  <script src="script.js"></script>
+
+</body>
+</html>

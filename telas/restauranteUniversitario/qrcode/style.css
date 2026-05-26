@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #031b33;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.web-container {
+    background-color: #052646;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.btn-back {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.logo .highlight { color: #f39c12; }
+
+.profile-icon {
+    font-size: 24px;
+    background: rgba(255,255,255,0.1);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.content {
+    text-align: center;
+}
+
+h2 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.instruction {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.qr-box {
+    background-color: white;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.qr-box img {
+    display: block;
+    max-width: 100%;
+}
+
+.sub-instruction {
+    color: #cbd5e1;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.copy-paste-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+#pix-code {
+    background-color: #cbd5e1;
+    color: #475569;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 13px;
+    text-overflow: ellipsis;
+}
+
+#btn-copy {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#btn-copy:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-cancel {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-cancel:hover { background-color: #dc2626; }

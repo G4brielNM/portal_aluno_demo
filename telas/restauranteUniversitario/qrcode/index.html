@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Aluno - Pagamento Pix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="web-container">
+        <header class="header">
+            <button class="btn-back" onclick="window.history.back()">←</button>
+            <div class="logo">PORTAL DO <span class="highlight">ALUNO</span></div>
+            <div class="profile-icon">👤</div>
+        </header>
+
+        <main class="content">
+            <h2>Recarregar</h2>
+            <p class="instruction">Escaneie o QR code:</p>
+            
+            <div class="qr-box">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=PortalDoAlunoPixCopiaECola" alt="QR Code Pix" id="qr-image">
+            </div>
+
+            <p class="sub-instruction">Ou copie e cole o código:</p>
+            
+            <div class="copy-paste-container">
+                <input type="text" id="pix-code" value="00020126580014BR.GOV.BCB.PIX0114" readonly>
+                <button id="btn-copy">Copiar para a área de transferência</button>
+            </div>
+
+            <button class="btn-cancel" onclick="window.location.href='../pagamento1/index.html'">✗ Cancelar</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
