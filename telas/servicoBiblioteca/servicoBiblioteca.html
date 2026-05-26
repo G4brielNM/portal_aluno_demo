@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços da Biblioteca - Portal do Aluno</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../style.css"> 
+    <link rel="stylesheet" href="servicoBiblioteca.css"> 
+</head>
+<body>
+
+    <div class="app-container">
+
+        <section id="tela-bib-pedidos" class="tela">
+            <header class="header-estudante">
+                <button class="btn-icon" onclick="window.location.href='../../index.html'">
+                    <span class="material-symbols-outlined header-icon-back">arrow_back</span>
+                </button>
+                <img src="../../icons/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
+                <button class="btn-icon">
+                    <div class="avatar-placeholder">
+                        <span class="material-symbols-outlined profile-icon-glyph">account_circle</span>
+                    </div>
+                </button>
+            </header>
+
+            <div class="conteudo-centralizado">
+                <h2 class="titulo-secao">Pedidos</h2>
+
+                <div class="mensagem-vazia">
+                    <h3>Nenhum pedido</h3>
+                    <p>Você ainda não possui<br>nenhum pedido</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tela-bib-historico" class="tela escondida">
+            <header class="header-estudante">
+                <button class="btn-icon" onclick="mudarTela('tela-bib-pedidos')">
+                    <span class="material-symbols-outlined header-icon-back">arrow_back</span>
+                </button>
+                <img src="../../icons/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
+                <button class="btn-icon">
+                    <div class="avatar-placeholder">
+                        <span class="material-symbols-outlined profile-icon-glyph">account_circle</span>
+                    </div>
+                </button>
+            </header>
+
+            <div class="conteudo-centralizado">
+                <h2 class="titulo-secao">Histórico</h2>
+
+                <div class="card-tabela">
+                    <table class="tabela-dados">
+                        <thead>
+                            <tr>
+                                <th>Livro</th>
+                                <th class="center-text">Retirada</th>
+                                <th class="right-text">Devolução</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Álgebra Linear</td>
+                                <td class="center-text">13/04/2026 14:30</td>
+                                <td class="right-text">13/04/2026 16:30</td>
+                            </tr>
+                            <tr>
+                                <td>Análise I</td>
+                                <td class="center-text">19/03/2026 11:00</td>
+                                <td class="right-text">20/03/2026 13:40</td>
+                            </tr>
+                            <tr>
+                                <td>Cálculo A</td>
+                                <td class="center-text">06/08/2025 16:20</td>
+                                <td class="right-text">12/08/2025 13:00</td>
+                            </tr>
+                            <tr>
+                                <td>Princ. de Sist. de Info.</td>
+                                <td class="center-text">03/07/2025 14:30</td>
+                                <td class="right-text">18/07/2025 18:30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="paginacao">
+                        <span class="material-symbols-outlined paginacao-arrow">chevron_left</span>
+                        Página 1-1
+                        <span class="material-symbols-outlined paginacao-arrow">chevron_right</span>
+                    </div>
+                </div>
+
+                <button class="btn-exportar">
+                    Exportar para PDF <img src="../../icons/telainicial-relatorios.svg" alt="Exportar PDF">
+                </button>
+            </div>
+        </section>
+
+        <section id="tela-bib-reservas" class="tela escondida">
+            <header class="header-estudante">
+                <button class="btn-icon" onclick="mudarTela('tela-bib-pedidos')">
+                    <span class="material-symbols-outlined header-icon-back">arrow_back</span>
+                </button>
+                <img src="../../icons/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
+                <button class="btn-icon">
+                    <div class="avatar-placeholder">
+                        <span class="material-symbols-outlined profile-icon-glyph">account_circle</span>
+                    </div>
+                </button>
+            </header>
+
+            <div class="conteudo-centralizado">
+                <h2 class="titulo-secao">Reservas</h2>
+
+                <div class="mensagem-vazia">
+                    <h3>Nenhuma reserva</h3>
+                    <p>Você ainda não possui<br>nenhuma reserva</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tela-bib-renovacao" class="tela escondida">
+            <header class="header-estudante">
+                <button class="btn-icon" onclick="mudarTela('tela-bib-pedidos')">
+                    <span class="material-symbols-outlined header-icon-back">arrow_back</span>
+                </button>
+                <img src="../../icons/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
+                <button class="btn-icon">
+                    <div class="avatar-placeholder">
+                        <span class="material-symbols-outlined profile-icon-glyph">account_circle</span>
+                    </div>
+                </button>
+            </header>
+
+            <div class="conteudo-centralizado">
+                <h2 class="titulo-secao">Renovação</h2>
+
+                <div class="card-tabela">
+                    <table class="tabela-dados">
+                        <thead>
+                            <tr>
+                                <th>Livro</th>
+                                <th class="center-text">Data limite</th>
+                                <th class="right-text">Status <span class="seta-ordem">↑</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Álgebra Linear</td>
+                                <td class="center-text">13/04/2026</td>
+                                <td class="right-text status-vencido">Vencido (30 dias)</td>
+                            </tr>
+                            <tr>
+                                <td>Análise I</td>
+                                <td class="center-text">14/05/2026</td>
+                                <td class="right-text"><span class="btn-renovar-mini">Renovar?</span> (1 dia)</td>
+                            </tr>
+                            <tr>
+                                <td>Cálculo A</td>
+                                <td class="center-text">17/05/2026</td>
+                                <td class="right-text">4 dias para renovação</td>
+                            </tr>
+                            <tr>
+                                <td>Princ. de Sist. de Info.</td>
+                                <td class="center-text">20/05/2026</td>
+                                <td class="right-text">7 dias para renovação</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="paginacao">
+                        <span class="material-symbols-outlined paginacao-arrow">chevron_left</span>
+                        Página 1-1
+                        <span class="material-symbols-outlined paginacao-arrow">chevron_right</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        function mudarTela(idNovaTela) {
+            const todasAsTelas = document.querySelectorAll('.tela');
+            todasAsTelas.forEach(tela => tela.classList.add('escondida'));
+            const novaTela = document.getElementById(idNovaTela);
+            if (novaTela) {
+                novaTela.classList.remove('escondida');
+            }
+        }
+    </script>
+</body>
+</html>
