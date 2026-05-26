@@ -1,37 +1,90 @@
 /* ========================================== */
-/* ESTILOS GERAIS DE ÍCONES (Google Symbols) */
+/* GARANTE QUE AS TELAS ESCONDAM CORRETAMENTE */
 /* ========================================== */
+.escondida {
+    display: none !important;
+}
 
-/* Garante que os ícones fiquem alinhados verticalmente com o texto */
+/* ========================================== */
+/* ESTILOS DOS BOTÕES DO MENU DA BIBLIOTECA   */
+/* ========================================== */
+.menu-biblioteca {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-menu-bib {
+    background-color: #FFFFFF;
+    color: #333333;
+    border: none;
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-menu-bib:hover {
+    background-color: #F8F9FA;
+}
+
+.btn-menu-bib:active {
+    transform: scale(0.98);
+}
+
+/* ========================================== */
+/* ESTILOS DE ÍCONES (Google Symbols)         */
+/* ========================================== */
 .material-symbols-outlined {
     vertical-align: middle;
     display: inline-block;
 }
 
-/* Estilo específico da Seta de Voltar no Header */
 .header-icon-back {
     color: #FFFFFF;
-    font-size: 28px; /* Tamanho proporcional ao Figma */
-    font-weight: 300; /* Linha fina */
+    font-size: 28px;
+    font-weight: 300;
 }
 
-/* Estilo específico das Setas de Paginação na Tabela */
 .paginacao-arrow {
-    font-size: 18px; /* Tamanho proporcional à tabela */
-    color: #CCCCCC; /* Cor suave conforme exemplo */
+    font-size: 18px;
+    color: #CCCCCC;
     cursor: pointer;
-    font-weight: 300; /* Linha fina */
+    font-weight: 300;
 }
 
-/* Feedback visual ao passar o mouse nas setas de paginação */
 .paginacao-arrow:hover {
     color: #999999;
 }
 
-/* ========================================== */
-/* LAYOUT E COMPONENTES ESPECÍFICOS */
-/* ========================================== */
+.avatar-placeholder {
+    width: 35px;
+    height: 35px;
+    background-color: #A29BFE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
+.profile-icon-glyph {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* ========================================== */
+/* LAYOUT GERAL DAS TELAS DA BIBLIOTECA       */
+/* ========================================== */
 .conteudo-centralizado {
     display: flex;
     flex-direction: column;
@@ -48,7 +101,7 @@
     margin-top: 10px;
 }
 
-/* Telas Vazias */
+/* Telas Vazias (Mensagens de "Nenhum pedido") */
 .mensagem-vazia {
     text-align: center;
     margin-top: 150px;
@@ -68,7 +121,9 @@
     font-weight: 400;
 }
 
-/* Cartões Brancos das Tabelas */
+/* ========================================== */
+/* TABELAS E COMPONENTES                      */
+/* ========================================== */
 .card-tabela {
     background-color: #FFFFFF;
     width: 100%;
@@ -78,7 +133,6 @@
     margin-bottom: 40px;
 }
 
-/* Estrutura das Tabelas */
 .tabela-dados {
     width: 100%;
     border-collapse: collapse;
@@ -110,6 +164,7 @@
 .seta-ordem {
     font-size: 10px;
     margin-left: 2px;
+    color: #333333; 
 }
 
 /* Status */
@@ -127,18 +182,18 @@
     cursor: pointer;
 }
 
-/* Paginação (Atualizada para usar Flexbox com ícones) */
+/* Paginação da Tabela */
 .paginacao {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px; /* Espaçamento entre setas e texto */
+    gap: 8px;
     margin-top: 20px;
     font-size: 10px;
     color: #999999;
 }
 
-/* Botão de Exportar */
+/* Botão de Exportar para PDF */
 .btn-exportar {
     background-color: #FFFFFF;
     color: #1C1C1C;
@@ -152,27 +207,10 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .btn-exportar img {
     width: 18px;
     height: 18px;
-}
-
-/* Ícone de Perfil Atualizado */
-.avatar-placeholder {
-    width: 35px;
-    height: 35px;
-    background-color: #A29BFE; /* Cor de fundo original */
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Garante o formato redondo */
-}
-
-.profile-icon-glyph {
-    color: #FFFFFF; /* Cor do ícone */
-    font-size: 30px; /* Tamanho proporcional ao círculo */
-    font-weight: 300; /* Linha fina estilo Figma */
 }

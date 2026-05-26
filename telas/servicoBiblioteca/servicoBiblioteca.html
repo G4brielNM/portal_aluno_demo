@@ -14,9 +14,46 @@
 
     <div class="app-container">
 
-        <section id="tela-bib-pedidos" class="tela">
+        <section id="tela-bib-menu" class="tela">
             <header class="header-estudante">
                 <button class="btn-icon" onclick="window.location.href='../../index.html'">
+                    <span class="material-symbols-outlined header-icon-back">arrow_back</span>
+                </button>
+                <img src="../../icons/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
+                <button class="btn-icon">
+                    <div class="avatar-placeholder">
+                        <span class="material-symbols-outlined profile-icon-glyph">account_circle</span>
+                    </div>
+                </button>
+            </header>
+
+            <div class="conteudo-centralizado">
+                <h2 class="titulo-secao">Menu da Biblioteca</h2>
+
+                <div class="menu-biblioteca">
+                    <button class="btn-menu-bib" onclick="mudarTela('tela-bib-pedidos')">
+                        <span>Pedidos</span>
+                        <span class="material-symbols-outlined" style="color: #002B5B;">chevron_right</span>
+                    </button>
+                    <button class="btn-menu-bib" onclick="mudarTela('tela-bib-historico')">
+                        <span>Histórico</span>
+                        <span class="material-symbols-outlined" style="color: #002B5B;">chevron_right</span>
+                    </button>
+                    <button class="btn-menu-bib" onclick="mudarTela('tela-bib-reservas')">
+                        <span>Reservas</span>
+                        <span class="material-symbols-outlined" style="color: #002B5B;">chevron_right</span>
+                    </button>
+                    <button class="btn-menu-bib" onclick="mudarTela('tela-bib-renovacao')">
+                        <span>Renovação</span>
+                        <span class="material-symbols-outlined" style="color: #002B5B;">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="tela-bib-pedidos" class="tela escondida">
+            <header class="header-estudante">
+                <button class="btn-icon" onclick="mudarTela('tela-bib-menu')">
                     <span class="material-symbols-outlined header-icon-back">arrow_back</span>
                 </button>
                 <img src="../../icons/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
@@ -39,7 +76,7 @@
 
         <section id="tela-bib-historico" class="tela escondida">
             <header class="header-estudante">
-                <button class="btn-icon" onclick="mudarTela('tela-bib-pedidos')">
+                <button class="btn-icon" onclick="mudarTela('tela-bib-menu')">
                     <span class="material-symbols-outlined header-icon-back">arrow_back</span>
                 </button>
                 <img src="../../icons/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
@@ -101,7 +138,7 @@
 
         <section id="tela-bib-reservas" class="tela escondida">
             <header class="header-estudante">
-                <button class="btn-icon" onclick="mudarTela('tela-bib-pedidos')">
+                <button class="btn-icon" onclick="mudarTela('tela-bib-menu')">
                     <span class="material-symbols-outlined header-icon-back">arrow_back</span>
                 </button>
                 <img src="../../icons/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
@@ -124,7 +161,7 @@
 
         <section id="tela-bib-renovacao" class="tela escondida">
             <header class="header-estudante">
-                <button class="btn-icon" onclick="mudarTela('tela-bib-pedidos')">
+                <button class="btn-icon" onclick="mudarTela('tela-bib-menu')">
                     <span class="material-symbols-outlined header-icon-back">arrow_back</span>
                 </button>
                 <img src="../../icons/logo-portal.svg" alt="Portal do Aluno" class="logo-header">
@@ -184,8 +221,13 @@
 
     <script>
         function mudarTela(idNovaTela) {
+            // Pega todas as seções que têm a classe 'tela'
             const todasAsTelas = document.querySelectorAll('.tela');
+            
+            // Esconde todas elas
             todasAsTelas.forEach(tela => tela.classList.add('escondida'));
+            
+            // Encontra a tela que foi chamada e remove a classe 'escondida'
             const novaTela = document.getElementById(idNovaTela);
             if (novaTela) {
                 novaTela.classList.remove('escondida');
