@@ -1,216 +1,298 @@
-/* ========================================== */
-/* GARANTE QUE AS TELAS ESCONDAM CORRETAMENTE */
-/* ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+}
+
+/* BODY */
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        180deg,
+        #002B5B 0%,
+        #001021 100%
+    );
+
+    color: white;
+}
+
+/* ESCONDER TELAS */
 .escondida {
     display: none !important;
 }
 
-/* ========================================== */
-/* ESTILOS DOS BOTÕES DO MENU DA BIBLIOTECA   */
-/* ========================================== */
-.menu-biblioteca {
+/* TELA */
+.tela {
     width: 100%;
-    max-width: 350px;
+    min-height: 100vh;
+
+    padding: 30px 40px;
+
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 
-.btn-menu-bib {
-    background-color: #FFFFFF;
-    color: #333333;
-    border: none;
-    border-radius: 12px;
-    padding: 18px 20px;
+/* HEADER */
+.header-estudante {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 15px;
-    font-weight: bold;
+
+    padding: 25px 0;
+}
+
+/* BOTÃO HEADER */
+.btn-icon {
+    background: none;
+    border: none;
+
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s, background-color 0.2s;
 }
 
-.btn-menu-bib:hover {
-    background-color: #F8F9FA;
+/* LOGO */
+.logo-header {
+    width: 150px;
 }
 
-.btn-menu-bib:active {
-    transform: scale(0.98);
-}
-
-/* ========================================== */
-/* ESTILOS DE ÍCONES (Google Symbols)         */
-/* ========================================== */
-.material-symbols-outlined {
-    vertical-align: middle;
-    display: inline-block;
-}
-
-.header-icon-back {
-    color: #FFFFFF;
-    font-size: 28px;
-    font-weight: 300;
-}
-
-.paginacao-arrow {
-    font-size: 18px;
-    color: #CCCCCC;
-    cursor: pointer;
-    font-weight: 300;
-}
-
-.paginacao-arrow:hover {
-    color: #999999;
-}
-
+/* PERFIL */
 .avatar-placeholder {
-    width: 35px;
-    height: 35px;
-    background-color: #A29BFE;
+    width: 45px;
+    height: 45px;
+
+    background: #C8B6FF;
+
     border-radius: 50%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+
+    font-size: 20px;
 }
 
-.profile-icon-glyph {
-    color: #FFFFFF;
-    font-size: 30px;
-    font-weight: 300;
-}
-
-/* ========================================== */
-/* LAYOUT GERAL DAS TELAS DA BIBLIOTECA       */
-/* ========================================== */
+/* CONTEÚDO */
 .conteudo-centralizado {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding: 0 10px;
 }
 
+/* TÍTULO */
 .titulo-secao {
-    font-size: 20px;
-    color: #FFFFFF;
+    text-align: center;
+
+    font-size: 18px;
     font-weight: 400;
+
     margin-bottom: 40px;
-    margin-top: 10px;
 }
 
-/* Telas Vazias (Mensagens de "Nenhum pedido") */
+/* MENU */
+.menu-biblioteca {
+    width: 100%;
+    max-width: 1000px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+/* BOTÕES MENU */
+.btn-menu-bib {
+    width: 100%;
+
+    background: white;
+    color: #222;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 14px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+/* HOVER */
+.btn-menu-bib:hover {
+    transform: scale(1.01);
+}
+
+/* TEXTO BOTÃO */
+.btn-menu-bib span {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* SETA */
+.seta-menu {
+    color: #002B5B;
+    font-size: 22px;
+}
+
+/* MENSAGEM VAZIA */
 .mensagem-vazia {
     text-align: center;
-    margin-top: 150px;
+
+    margin-top: 100px;
 }
 
 .mensagem-vazia h3 {
-    font-size: 17px;
-    color: #FFFFFF;
-    font-weight: 700;
-    margin-bottom: 5px;
+    font-size: 22px;
+
+    margin-bottom: 10px;
 }
 
 .mensagem-vazia p {
-    font-size: 15px;
-    color: #A4B3C6;
-    line-height: 1.4;
-    font-weight: 400;
+    color: #B8C2D0;
+
+    line-height: 1.6;
 }
 
-/* ========================================== */
-/* TABELAS E COMPONENTES                      */
-/* ========================================== */
+/* CARD TABELA */
 .card-tabela {
-    background-color: #FFFFFF;
+    background: white;
+
     width: 100%;
-    max-width: 350px;
-    border-radius: 10px;
-    padding: 20px 15px;
-    margin-bottom: 40px;
+    max-width: 1000px;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    overflow-x: auto;
 }
 
+/* TABELA */
 .tabela-dados {
     width: 100%;
+
     border-collapse: collapse;
-    font-size: 10px;
-    color: #333333;
+
+    font-size: 14px;
+
+    color: #333;
 }
 
+/* CABEÇALHO */
 .tabela-dados th {
-    font-weight: normal;
-    color: #555555;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #DDD;
+
     text-align: left;
+
+    font-size: 14px;
 }
 
+/* CÉLULAS */
 .tabela-dados td {
-    padding: 12px 0;
-    border-bottom: 1px solid #EEEEEE;
+    padding: 15px 0;
+
+    border-bottom: 1px solid #EEE;
 }
 
+/* ÚLTIMA LINHA */
 .tabela-dados tr:last-child td {
     border-bottom: none;
 }
 
-/* Alinhamentos Específicos */
-.center-text { text-align: center; }
-.right-text { text-align: right; }
-
-.seta-ordem {
-    font-size: 10px;
-    margin-left: 2px;
-    color: #333333; 
-}
-
-/* Status */
+/* STATUS */
 .status-vencido {
-    color: #C92A2A;
+    color: #D62828;
+    font-weight: bold;
 }
 
+/* BOTÃO RENOVAR */
 .btn-renovar-mini {
-    background-color: #E9ECEF;
+    background: #E9ECEF;
+
     border: 1px solid #CED4DA;
-    border-radius: 4px;
-    padding: 2px 4px;
-    font-size: 9px;
-    color: #495057;
+    border-radius: 6px;
+
+    padding: 4px 8px;
+
+    font-size: 12px;
+
     cursor: pointer;
 }
 
-/* Paginação da Tabela */
-.paginacao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin-top: 20px;
-    font-size: 10px;
-    color: #999999;
-}
-
-/* Botão de Exportar para PDF */
+/* BOTÃO EXPORTAR */
 .btn-exportar {
-    background-color: #FFFFFF;
-    color: #1C1C1C;
-    border: none;
     width: 100%;
-    max-width: 350px;
-    padding: 15px 20px;
-    border-radius: 10px;
-    font-size: 13px;
+    max-width: 1000px;
+
+    background: white;
+    color: #222;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 14px 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    transition: 0.2s;
 }
 
-.btn-exportar img {
-    width: 18px;
-    height: 18px;
+/* HOVER EXPORTAR */
+.btn-exportar:hover {
+    transform: scale(1.01);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    .tela {
+        padding: 20px;
+    }
+
+    .header-estudante {
+        padding: 10px 0;
+    }
+
+    .logo-header {
+        width: 120px;
+    }
+
+    .card-tabela {
+        padding: 15px;
+    }
+
+    .tabela-dados {
+        font-size: 12px;
+    }
+
+    .tabela-dados th,
+    .tabela-dados td {
+        padding: 10px 5px;
+    }
 }
