@@ -1,442 +1,264 @@
-/* ===================================
-   RESET
-=================================== */
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
 }
 
+/* BODY */
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        180deg,
+        #002B5B 0%,
+        #001021 100%
+    );
+
+    color: white;
+}
+
+/* TELA */
+.tela {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 30px 40px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.header-estudante {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 0;
+}
+
+/* BOTÃO */
 .btn-icon {
     background: none;
     border: none;
+
     cursor: pointer;
 }
 
-/* ===================================
-   VARIÁVEIS
-=================================== */
-
-:root {
-  --bg: #0d1b3e;
-  --bg-mid: #112149;
-  --bg-card: #15295a;
-
-  --white: #ffffff;
-  --muted: rgba(255,255,255,0.5);
-
-  --green: #2ecc71;
-  --green-dark: #27ae60;
-
-  --border: rgba(255,255,255,0.08);
-
-  --radius: 14px;
-  --transition: 0.2s ease;
+/* LOGO */
+.logo-header {
+    width: 150px;
 }
 
-/* ===================================
-   BODY
-=================================== */
+/* PERFIL */
+.avatar-placeholder {
+    width: 45px;
+    height: 45px;
 
-body {
-  background: linear-gradient(to bottom, #073871, #031222);
-    background-attachment: fixed; /* Garante que o degradê cubra a tela toda mesmo se tiver rolagem */
-    margin: 0;
-    min-height: 100vh;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    background: #C8B6FF;
 
-/* ===================================
-   LAYOUT
-=================================== */
-
-.shell {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-}
-
-/* ===================================
-   SIDEBAR
-=================================== */
-
-.sidebar {
-  width: 220px;
-  background: ;
-
-  border-right: 1px solid var(--border);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  padding: 30px 0;
-}
-
-.sidebar-logo {
-  padding: 0 24px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo-icon {
-    width: 10%;
-    height: 10%;
-    
-    background: white;
     border-radius: 50%;
-    
+
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
 }
 
-.logo-icon {
-  width: 40px;
-  height: 40px;
+/* CONTEÚDO */
+.conteudo-centralizado {
+    width: 100%;
+    max-width: 1000px;
 
-  background: white;
-  border-radius: 50%;
+    margin: 0 auto;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.logo-text span {
-  font-size: 10px;
-  color: var(--muted);
+/* TÍTULO */
+.titulo-secao {
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: 400;
+
+    margin-bottom: 40px;
 }
 
-.logo-text strong {
-  font-size: 16px;
+/* CARD RU */
+.card-ru {
+    width: 100%;
+    max-width: 500px;
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* ===================================
-   NAVEGAÇÃO
-=================================== */
-
-.nav {
-  padding: 20px 12px;
-}
-
-.nav-item {
-  padding: 12px 14px;
-  border-radius: 10px;
-
-  cursor: pointer;
-
-  transition: var(--transition);
-
-  color: var(--muted);
-}
-
-.nav-item:hover {
-  background: rgba(255,255,255,0.06);
-  color: white;
-}
-
-.nav-item.active {
-  background: rgba(255,255,255,0.1);
-  color: white;
-}
-
-/* ===================================
-   USUÁRIO
-=================================== */
-
-.user-chip {
-  margin: 0 12px;
-
-  padding: 10px 14px;
-
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  border-radius: 10px;
-
-  transition: var(--transition);
-}
-
-.user-chip:hover {
-  background: rgba(255,255,255,0.05);
-}
-
-.avatar {
-  width: 32px;
-  height: 32px;
-
-  border-radius: 50%;
-
-  background: rgba(255,255,255,0.1);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* ===================================
-   MAIN
-=================================== */
-
-.main {
-  flex: 1;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: 20px;
-}
-
-/* ===================================
-   TOPBAR
-=================================== */
-
-.topbar {
-  width: 100%;
-  max-width: 500px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  margin-bottom: 30px;
-}
-
-.btn-voltar {
-  text-decoration: none;
-  color: var(--white);
-  font-size: 13px;
-  font-weight: 500;
-  transition: var(--transition);
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.btn-voltar:hover {
-  transform: translateX(-3px);
-  color: var(--muted);
-}
-
-.topbar-title {
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.topbar-badge {
-  background: rgba(46,204,113,0.15);
-
-  color: var(--green);
-
-  padding: 4px 10px;
-
-  border-radius: 20px;
-
-  font-size: 12px;
-}
-
-/* ===================================
-   CARD
-=================================== */
-
-.card {
-  width: 100%;
-  max-width: 420px;
-
-  background: var(--bg-card);
-
-  border: 1px solid var(--border);
-
-  border-radius: var(--radius);
-
-  padding: 40px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* ===================================
-   SALDO
-=================================== */
-
+/* LABEL */
 .saldo-label {
-  color: var(--muted);
-  font-size: 12px;
+    color: #666;
 
-  margin-bottom: 10px;
+    font-size: 14px;
+
+    margin-bottom: 10px;
 }
 
+/* SALDO */
 .saldo-value {
-  width: 100%;
+    width: 100%;
 
-  padding: 12px;
+    background: #F2F4F8;
 
-  background: rgba(255,255,255,0.05);
+    border-radius: 10px;
 
-  border-radius: 10px;
+    padding: 14px;
 
-  text-align: center;
+    text-align: center;
 
-  font-size: 28px;
+    color: #111;
 
-  margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+
+    margin-bottom: 30px;
 }
 
-/* ===================================
-   QR CODE
-=================================== */
-
+/* QR CODE */
 .qr-wrap {
-  width: 220px;
-  height: 220px;
+    width: 220px;
+    height: 220px;
 
-  background: white;
+    background: white;
 
-  border-radius: 12px;
+    border-radius: 12px;
 
-  padding: 15px;
+    padding: 10px;
 
-  margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .qr-wrap img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
-/* ===================================
-   MATRÍCULA
-=================================== */
-
+/* MATRÍCULA */
 .matricula {
-  color: var(--muted);
+    color: #555;
 
-  margin-bottom: 25px;
+    letter-spacing: 2px;
 
-  letter-spacing: 3px;
+    margin-bottom: 30px;
 }
 
-/* ===================================
-   BOTÃO PRINCIPAL
-=================================== */
-
+/* BOTÃO ADICIONAR */
 .btn-compra {
-  width: 52px;
-  height: 52px;
+    width: 100%;
 
-  border: none;
-  border-radius: 50%;
+    background: linear-gradient(
+        90deg,
+        #A100FF,
+        #D100FF
+    );
 
-  background: var(--green);
+    color: white;
 
-  color: white;
+    border: none;
+    border-radius: 12px;
 
-  font-size: 28px;
+    padding: 14px;
 
-  cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
 
-  margin-bottom: 30px;
+    cursor: pointer;
 
-  transition: var(--transition);
+    margin-bottom: 20px;
+
+    transition: 0.2s;
 }
 
 .btn-compra:hover {
-  background: var(--green-dark);
-
-  transform: scale(1.05);
+    transform: scale(1.01);
 }
 
-/* ===================================
-   BOTÕES SECUNDÁRIOS
-=================================== */
-
+/* AÇÕES */
 .actions {
-  display: flex;
-  gap: 10px;
+    width: 100%;
 
-  width: 100%;
+    display: flex;
+
+    gap: 12px;
 }
 
+/* BOTÕES SECUNDÁRIOS */
 .btn-sec {
-  flex: 1;
+    flex: 1;
 
-  padding: 12px;
+    background: #F2F4F8;
 
-  border-radius: 10px;
+    color: #222;
 
-  border: 1px solid rgba(255,255,255,0.2);
+    border: none;
+    border-radius: 12px;
 
-  background: transparent;
+    padding: 14px;
 
-  color: white;
+    font-size: 14px;
+    font-weight: 500;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  transition: var(--transition);
+    transition: 0.2s;
 }
 
 .btn-sec:hover {
-  background: rgba(255,255,255,0.06);
+    background: #E4E8EE;
 }
 
-/* ===================================
-   TOAST
-=================================== */
+/* RESPONSIVO */
+@media (max-width: 768px) {
 
-.toast {
-  position: fixed;
+    .tela {
+        padding: 20px;
+    }
 
-  bottom: 20px;
-  left: 50%;
+    .header-estudante {
+        padding: 10px 0;
+    }
 
-  transform: translateX(-50%);
+    .logo-header {
+        width: 120px;
+    }
 
-  background: var(--green);
+    .card-ru {
+        padding: 25px;
+    }
 
-  padding: 10px 20px;
-
-  border-radius: 30px;
-
-  opacity: 0;
-
-  transition: 0.3s;
-}
-
-.toast.show {
-  opacity: 1;
-}
-
-/* ===================================
-   RESPONSIVO
-=================================== */
-
-@media (max-width: 700px) {
-
-  .sidebar {
-    position: fixed;
-    left: -220px;
-    top: 0;
-
-    height: 100vh;
-
-    transition: 0.3s;
-  }
-
-  .sidebar.open {
-    left: 0;
-  }
-
-  .main {
-    padding-top: 70px;
-  }
+    .actions {
+        flex-direction: column;
+    }
 
 }

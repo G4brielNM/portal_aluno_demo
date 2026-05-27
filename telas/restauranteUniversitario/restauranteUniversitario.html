@@ -1,183 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Configurações básicas -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Universitário</title>
 
-  <title>Portal do Aluno — RU</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- CSS externo -->
-  <link rel="stylesheet" href="restauranteUniversitario.css" />
+    <link rel="stylesheet" href="restauranteUniversitario.css">
 </head>
 
 <body>
 
-  <div class="shell">
+    <section class="tela">
 
-    <!-- =========================
-         SIDEBAR
-    ========================== -->
-    <aside class="sidebar" id="sidebar">
+        <!-- HEADER -->
+        <header class="header-estudante">
 
-      <!-- Logo -->
-      <div class="sidebar-logo">
+            <button class="btn-icon"
+                onclick="window.location.href='../../telas/telaInicial/telainicial.html'">
 
-       
-        <div class="logo-text">
-          <button class="btn-icon" onclick="window.location.href='../../telas/telaInicial/telainicial.html'">
                 <img src="../../icons/login-voltar.svg" alt="Voltar">
             </button>
-        </div>
 
-      </div>
+            <img src="../../icons/logo-portal.svg"
+                alt="Logo"
+                class="logo-header">
 
-      <!-- Navegação -->
-      <nav class="nav">
+            <div class="avatar-placeholder">
+                👤
+            </div>
 
-        <div class="nav-item active" onclick="setActive(this)">
-          Meu QR Code
-        </div>
+        </header>
 
-        <div class="nav-item" onclick="window.location.href='../../telas/restauranteUniversitario/historico/index.html'; setActive(this)"; showToast('Histórico em breve')">
-          Histórico
-        </div>
+        <!-- CONTEÚDO -->
+        <div class="conteudo-centralizado">
 
-        <div class="nav-item" onclick="window.location.href='../../telas/restauranteUniversitario/cardapio/index.html'; setActive(this); showToast('Cardápio em breve')">
-          Cardápio
-        </div>
+            <h2 class="titulo-secao">
+                Restaurante Universitário
+            </h2>
 
-        
+            <!-- CARD -->
+            <div class="card-ru">
 
-      </nav>
+                <!-- SALDO -->
+                <p class="saldo-label">
+                    Saldo disponível
+                </p>
 
-      <!-- Usuário -->
-      <div class="sidebar-bottom">
+                <div class="saldo-value">
+                    R$ 10,00
+                </div>
 
-        <div class="user-chip">
+                <!-- QR CODE -->
+                <div class="qr-wrap">
 
-          <div class="avatar">
-            GN
-          </div>
+                    <img
+                        src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=PortalAluno"
+                        alt="QR Code"
+                    >
 
-          <div class="user-info">
-            <span>Gabriel Nascimento</span>
-            <span>Aluno</span>
-          </div>
+                </div>
 
-        </div>
+                <!-- MATRÍCULA -->
+                <p class="matricula">
+                    20250300029
+                </p>
 
-      </div>
+                <!-- BOTÃO -->
+                <button class="btn-compra"
+                    onclick="window.location.href='pagamento1/index.html'">
 
-    </aside>
+                    + Adicionar saldo
 
-    <!-- Overlay mobile -->
-    <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+                </button>
 
-    <!-- =========================
-         CONTEÚDO PRINCIPAL
-    ========================== -->
-    <main class="main">
+                <!-- AÇÕES -->
+                <div class="actions">
 
-      <!-- Topbar -->
-      <div class="topbar">
+                    <button class="btn-sec"
+                        onclick="window.location.href='../../telas/restauranteUniversitario/historico/index.html'">
 
-        <span class="topbar-title">
-          Restaurante Universitário
-        </span>
+                        Histórico
 
-        <span class="topbar-badge">
-          ● Online
-        </span>
+                    </button>
 
-      </div>
+                    <button class="btn-sec"
+                        onclick="window.location.href='../../telas/restauranteUniversitario/cardapio/index.html'">
 
-      <!-- Card principal -->
-      <div class="card">
+                        Cardápio
 
-        <!-- Saldo -->
-        <p class="saldo-label">
-          Saldo disponível
-        </p>
+                    </button>
 
-        <div class="saldo-value">
-          R$ 10,00
-        </div>
+                </div>
 
-        <!-- QR Code -->
-        <div class="qr-wrap" id="qrWrap">
-
-          <!-- Aqui pode entrar uma imagem -->
-          <img
-            src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=PortalAluno"
-            alt="QR Code"
-          />
+            </div>
 
         </div>
 
-        <!-- Matrícula -->
-        <p class="matricula">
-          20250300029
-        </p>
-
-
-
-        <!-- Botão secundário -->
-        <button
-          class="btn-compra"
-          onclick="window.location.href='pagamento1/index.html'"
-        >
-        +
-    
-        </button>
-
-        <!-- Ações -->
-        <div class="actions">
-
-          <button
-            class="btn-sec"
-            onclick="window.location.href='../../telas/restauranteUniversitario/historico/index.html'; setActive(this)"; showToast('Histórico em breve')"
-          >
-            Histórico
-          </button>
-
-          <button
-            class="btn-sec"
-            onclick="window.location.href='../../telas/restauranteUniversitario/cardapio/index.html'; setActive(this); showToast('Cardápio em breve')"
-          >
-            Cardápio
-          </button>
-
-        </div>
-
-      </div>
-
-    </main>
-
-  </div>
-
-  <!-- Toast -->
-  <div class="toast" id="toast"></div>
-
-  <!-- Botão menu mobile -->
-  <button
-    class="sidebar-toggle"
-    onclick="openSidebar()"
-  >
-    ☰
-  </button>
-
-  <!-- JS externo -->
-  <script src="script.js"></script>
+    </section>
 
 </body>
 </html>
