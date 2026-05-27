@@ -115,11 +115,71 @@ body {
 }
 
 /* BOTÕES MENU */
-.btn-menu-bib {
+.btn-menu-pedidos {
     width: 100%;
 
-    background: white;
-    color: #222;
+    background: #D35400;
+    color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 14px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-menu-historico {
+    width: 100%;
+
+    background: #00B944;
+    color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 14px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-menu-reservas {
+    width: 100%;
+
+    background: #CD8C00;
+    color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 14px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-menu-renovacao {
+    width: 100%;
+
+    background: #0060D0;
+    color: white;
 
     border: none;
     border-radius: 12px;
@@ -136,7 +196,19 @@ body {
 }
 
 /* HOVER */
-.btn-menu-bib:hover {
+.btn-menu-pedidos:hover {
+    transform: scale(1.01);
+}
+
+.btn-menu-reservas:hover {
+    transform: scale(1.01);
+}
+
+.btn-menu-historico:hover {
+    transform: scale(1.01);
+}
+
+.btn-menu-renovacao:hover {
     transform: scale(1.01);
 }
 
@@ -148,7 +220,7 @@ body {
 
 /* SETA */
 .seta-menu {
-    color: #002B5B;
+    color: #ffffff;
     font-size: 22px;
 }
 
