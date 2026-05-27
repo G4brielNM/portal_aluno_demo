@@ -1,0 +1,178 @@
+/* ========================================== */
+/* ESTILOS GERAIS DE ÍCONES (Google Symbols) */
+/* ========================================== */
+
+/* Garante que os ícones fiquem alinhados verticalmente com o texto */
+.material-symbols-outlined {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Estilo específico da Seta de Voltar no Header */
+.header-icon-back {
+    color: #FFFFFF;
+    font-size: 28px; /* Tamanho proporcional ao Figma */
+    font-weight: 300; /* Linha fina */
+}
+
+/* Estilo específico das Setas de Paginação na Tabela */
+.paginacao-arrow {
+    font-size: 18px; /* Tamanho proporcional à tabela */
+    color: #CCCCCC; /* Cor suave conforme exemplo */
+    cursor: pointer;
+    font-weight: 300; /* Linha fina */
+}
+
+/* Feedback visual ao passar o mouse nas setas de paginação */
+.paginacao-arrow:hover {
+    color: #999999;
+}
+
+/* ========================================== */
+/* LAYOUT E COMPONENTES ESPECÍFICOS */
+/* ========================================== */
+
+.conteudo-centralizado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.titulo-secao {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+/* Telas Vazias */
+.mensagem-vazia {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.mensagem-vazia h3 {
+    font-size: 17px;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.mensagem-vazia p {
+    font-size: 15px;
+    color: #A4B3C6;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+/* Cartões Brancos das Tabelas */
+.card-tabela {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin-bottom: 40px;
+}
+
+/* Estrutura das Tabelas */
+.tabela-dados {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+    color: #333333;
+}
+
+.tabela-dados th {
+    font-weight: normal;
+    color: #555555;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #DDDDDD;
+    text-align: left;
+}
+
+.tabela-dados td {
+    padding: 12px 0;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.tabela-dados tr:last-child td {
+    border-bottom: none;
+}
+
+/* Alinhamentos Específicos */
+.center-text { text-align: center; }
+.right-text { text-align: right; }
+
+.seta-ordem {
+    font-size: 10px;
+    margin-left: 2px;
+}
+
+/* Status */
+.status-vencido {
+    color: #C92A2A;
+}
+
+.btn-renovar-mini {
+    background-color: #E9ECEF;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 9px;
+    color: #495057;
+    cursor: pointer;
+}
+
+/* Paginação (Atualizada para usar Flexbox com ícones) */
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre setas e texto */
+    margin-top: 20px;
+    font-size: 10px;
+    color: #999999;
+}
+
+/* Botão de Exportar */
+.btn-exportar {
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+    border: none;
+    width: 100%;
+    max-width: 350px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-exportar img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Ícone de Perfil Atualizado */
+.avatar-placeholder {
+    width: 35px;
+    height: 35px;
+    background-color: #A29BFE; /* Cor de fundo original */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Garante o formato redondo */
+}
+
+.profile-icon-glyph {
+    color: #FFFFFF; /* Cor do ícone */
+    font-size: 30px; /* Tamanho proporcional ao círculo */
+    font-weight: 300; /* Linha fina estilo Figma */
+}

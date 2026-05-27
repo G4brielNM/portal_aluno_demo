@@ -205,8 +205,25 @@ body {
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   margin-bottom: 30px;
+}
+
+.btn-voltar {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 500;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-voltar:hover {
+  transform: translateX(-3px);
+  color: var(--muted);
 }
 
 .topbar-title {
